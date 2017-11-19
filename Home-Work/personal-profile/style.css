@@ -1,0 +1,33 @@
+body {
+    background:#d0b4d4;
+    text-align: center;}
+
+h1 {font-family:Helvetica;
+color:#112aeb;}
+
+p {
+    font-family:'Times New Roman';
+    color:#112aeb;
+    font-size:18px;
+    padding-left:400px;
+    padding-right:400px; x
+    }
+
+a:hover {opacity:0.5;}
+
+a{
+    text-decoration:none;
+    font-weight:bold;
+    }
+
+input {
+    border:0;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  input[type="submit"] 
+  {
+    background:#112aeb;
+    color: white;
+  }
