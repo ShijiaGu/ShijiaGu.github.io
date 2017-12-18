@@ -1,0 +1,51 @@
+
+
+body {
+  background:linear-gradient(to right, rgb(255,255,0),rgb(0,255,255));
+  font-family: 'Barlow', sans-serif;
+}
+
+#f2c {
+  display:flex;
+  align-items: baseline;
+  margin: 20px;
+}
+
+#c2f {
+  display:flex;
+  align-items: baseline;  
+  margin: 20px;
+}
+
+h1 {
+  font-size: 100px;
+  color: white;
+  margin: 20px 0 40px 0;
+  line-height: 80%;
+}
+
+input {
+  width: 160px;
+  height: 28px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 8px;
+  text-align: center;
+  color: rgb(12,184,184);
+}
+
+input:focus {
+  background: rgb(232,253,254);
+  outline-style: none;
+}
+
+
+div {
+  margin-right: 8px;
+}
+
+span {
+  width: 80px;
+  border-bottom: 1px solid;
+  margin-left: 6px;
+}

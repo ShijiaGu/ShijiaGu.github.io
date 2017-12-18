@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow|Playfair+Display:400,700" rel="stylesheet">
+</head>
+
+<body>
+		<h1>Temperature Coverter</h1>
+		<section id="f2c">
+			<div>Fahrenheit</div>
+			<input id="fahrenheit_input" type="number" placeholder="0"
+			oninput="temperatureConverter1()"
+			>
+			
+			<div>=</div>
+			<div>Celsius:<span id="Celsius_output" style="color:rgb(12,184,184)"></span>
+			</div>
+		</section>
+
+		<section id="c2f">
+			<div>Celsius</div>
+			<input id="Celsius_input" type="number" placeholder="0"
+			oninput="temperatureConverter2()"
+			>
+			<div>=</div>
+			<div>Fahrenheit:<span id="fahrenheit_output" style="color:rgb(12,184,184)"></span></div>
+			
+		</section>
+		
+	<!-- ADD A SCRIPT TAG AND POINT IT TO JQUERY CDN! -->
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+</body>
+</html>
