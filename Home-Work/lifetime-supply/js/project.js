@@ -1,6 +1,8 @@
 // $(document).ready(function(){
   
   $("#click-me").click(function(){
+
+    // console.log("this is working!");
     
     var age = $("#age").val();
     var maxAge = $("#max-age").val();
@@ -11,6 +13,11 @@
 
     $("#solution").html(parseInt(maxAge-age) * parseInt(numPerDay) * 365);
     $("#drink").html(item);
+
+    // another way to do:
+    // var total = (parseInt(maxAge) - parseInt(age))*parseInt(numPerDay)*365;
+    // $("#solution").html(total);
+    // $("#drink").html(item);
   })
   
 // })  
