@@ -10,7 +10,7 @@
 
   <body>
 
-    <header>
+    <header class="header sticky" id="myHeader">
       <a href="">
         <div id="logo"></div>
       </a>
@@ -26,30 +26,42 @@
 
       <div id="part-1">
         <div id="vitra-schaudepot">
-          <p>2016. Herzog & De Meurow</p>
-          <h2>Vitra Schaudepot</h2>
-          <button class="show-more">show more</button>
+          <div class="project-info">
+            <p class="year_name">2016. Herzog & De Meurow</p>
+            <h2 class="project-name">
+              <span>Vitra</span>
+              <span>Schaudepot</span>
+            </h2>
+            <button class="show-more">show more</button>
+        </div>
         </div>
         <div id="vitrahaus">
           <p>2010. Herzog & De Meurow</p>
-          <h2>Vitrahaus</h2>
+          <h2 class="project-name">Vitrahaus</h2>
           <button class="show-more">show more</button>
         </div>
         <div id="firestation">
           <p>1993. Zaha Hadid</p>
-          <h2>Fire Station</h2>
+          <h2 class="project-name">Fire Station</h2>
           <button class="show-more">show more</button>
         </div>
       </div>
+
       <div id="part-2">
         <div id="conference-pavilion">
           <p>1993. Tadao Ando</p>
-          <h2>Conference Pavilion</h2>
+          <h2 class="project-name">
+            <span>Conference</span>
+            <span>Pavilion</span>
+          </h2>
           <button class="show-more">show more</button>
         </div>
         <div id="vitra-design-museum">
           <p>1989. Frank Gehry</p>
-          <h2>Vitra Desgin Museum</h2>
+          <h2 class="project-name">
+            <span>Vitra Desgin</span>
+            <span>Museum</span>
+          </h2 class="project-name">
           <button class="show-more">show more</button>
         </div>
         <div id="factory-building">
@@ -139,7 +151,58 @@
     </section>
 
     <section class="site-map">
-      <h2>Master Site</h2>
+      <div class="map"></div>
+
+      <div class="project-list">
+        <h2 id="master-site">Master Site</h2>
+        
+        <div class="lists">
+          <p class="items">Factory Buildings</p>
+          <p class="designer">Nicholas Grimshaw, 1981</p>
+          
+          <p class="items">Balancing Tool</p>
+          <p class="designer">Claes Oldenburg & Coosje van Bruggen, 1984</p>
+          
+          <p class="items">Vitra Design Museum</p>
+          <p class="designer">Frank Gehry, 1989</p>
+          
+          <p class="items">Factory Building</p>
+          <p class="designer">Frank Gehry, 1989</p>
+          
+          <p class="items">Conference Pavilion</p>
+          <p class="designer">Tadao Ando, 1993</p>
+          
+          <p class="items">Fire Station</p>
+          <p class="designer">Zaha Hadid, 1993</p>
+          
+          <p class="items">Factory Building</p>
+          <p class="designer">Álvaro Siza, 1994</p>
+          
+          <p class="items">Dome</p>
+          <p class="designer">Richard Buckminster Fuller and T.C. Howard, 2000</p>
+          
+          <p class="items">Petrol Station</p>
+          <p class="designer">Jean Prouvé, 2003</p>
+          
+          <p class="items">Bus Stop</p>
+          <p class="designer">Jasper Morrison, 2006</p>
+          
+          <p class="items">VitraHaus</p>
+          <p class="designer">Herzog & de Meuron, 2010</p>
+          
+          <p class="items">Factory Building</p>
+          <p class="designer">SANAA, 2012</p>
+          
+          <p class="items">Diogene</p>
+          <p class="designer">Renzo Piano, 2013</p>
+          
+          <p class="items">Vitra Slide Tower</p>
+          <p class="designer">Carsten Höller, 2014</p>
+          
+          <p class="items">Vitra Schaudepot</p>
+          <p class="designer">Herzog & de Meuron, 2016</p>
+        </div>
+      </div>
 
 
     </section>

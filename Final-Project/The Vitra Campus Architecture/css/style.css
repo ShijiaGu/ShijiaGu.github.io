@@ -20,9 +20,15 @@ section.intro {
 }
 
 header {
-    background: black;
+    /* background: black; */
     display: flex;
     justify-content: space-between;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #menu-icon-open {
@@ -41,7 +47,7 @@ header {
     height: 40px;
     width: 220px;
     cursor: pointer;
-    margin: 30px auto 0 30px;
+    margin: 30px auto 0 60px;
 }
 
 
@@ -51,7 +57,7 @@ header {
     line-height: 95%;
     letter-spacing: 1px;
     word-spacing: -2px;
-    margin: 0 auto 50px 80px;
+    margin: 0 auto 50px 60px;
 }
 
 #overall-intro {
@@ -62,6 +68,69 @@ header {
     color: #bcbec0;
     width: 650px;
     font-size: 22px;
-    margin: 0 auto 0px 80px;
+    margin: 0 auto 0px 60px;
 }
 
+#vitra-schaudepot {
+    background: url(../assets/projects/vitra_schaudepot_cover-2200_1.jpg) no-repeat;
+    height: 1200px;
+    position: relative;
+    z-index: -1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.year_name {
+    margin: 0;
+}
+
+.project-info {
+    position: absolute;
+    color: white;
+    margin: 60px;
+}
+
+button {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    /* cursor: pointer;     */
+}
+
+.project-name {
+    font-size: 40px;
+}
+
+.timeline {
+    background-color: #ebeced;
+    text-align: center;
+}
+
+.project-list {
+    background: black;
+    width: 400px;
+    color: white;
+}
+
+h2 #master-site {
+    margin: 0;
+}
+
+.lists {
+    color: #939598;  
+    margin: 60px auto 60px 60px;
+    
+}
+
+.items {
+    font-size: 18px;
+}
+
+.designer {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-size: 14px;    
+}
