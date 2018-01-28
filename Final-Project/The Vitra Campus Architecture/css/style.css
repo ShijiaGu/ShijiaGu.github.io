@@ -123,8 +123,19 @@ header {
     background: url(../assets/projects/vitra_schaudepot_cover-2200_1.jpg) no-repeat;
 }
 
-.year_name {
+.year {
     margin: 0;
+    position: absolute;
+}
+
+.year-right {
+    position: absolute;
+    left: 55%;
+}
+
+.year-left {
+    position: absolute;
+    right: 55%;
 }
 
 .project-info {
@@ -161,8 +172,10 @@ header {
 }
 
 .horizontal-dash {
-    display: inline-block;
-    width: 10px;
+    position: absolute;
+    /* display: inline-block; */
+    width: 1%;
+    left: 49.5%;
     border-top: 1px solid black;
 }
 
@@ -223,9 +236,10 @@ button {
     background: black;
     width: 400px;
     color: white;
+    height: 100%;
 }
 
-h2 #master-site {
+h2#master-site {
     margin: 0;
 }
 
@@ -233,6 +247,10 @@ h2 #master-site {
     color: #939598;  
     margin: 60px auto 60px 60px;
     
+}
+
+.site-map {
+    float: right;
 }
 
 .items {
