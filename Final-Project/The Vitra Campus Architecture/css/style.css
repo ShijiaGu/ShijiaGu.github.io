@@ -133,6 +133,69 @@ header {
     /* margin: 60px; */
 }
 
+.timeline {
+    position: relative;
+}
+
+.timeline h2 {
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+.timeline-list p {
+    font-size: 10px;
+    color: #bcbec0;
+    margin: 1px 0px;
+}
+
+.timeline-list h3 {
+    margin: 1px 0px;
+}
+
+.timeline-right {
+    text-align: left;
+}
+
+.timeline-left {
+    text-align: right;
+}
+
+.horizontal-dash {
+    display: inline-block;
+    width: 10px;
+    border-top: 1px solid black;
+}
+
+.timeline-vl {
+    left: 50%;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid grey;
+    float: left;
+}
+
+.timeline-list img {
+    width: 100%;
+}
+
+.timeline-list > div {
+    display: inline-block;
+    width: 200px;
+}
+
+.timeline-left {
+    position: relative;
+    right: 20%;
+}
+
+.timeline-right {
+    /* float: right; */
+    position: relative;
+    left: 20%;
+    /* right: 20%; */
+}
+
 button {
     border: 1px solid white;
     color: white;
@@ -145,6 +208,10 @@ button {
 
 .project-name {
     font-size: 40px;
+}
+
+.timeline-list {
+    display: block;
 }
 
 .timeline {
