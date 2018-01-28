@@ -234,13 +234,16 @@ button {
 
 .project-list {
     background: black;
-    width: 400px;
+    width: 30%;
     color: white;
     height: 100%;
+    float: right;
 }
 
 h2#master-site {
     margin: 0;
+    text-align: center;
+    padding: 20px 0px;
 }
 
 .lists {
@@ -250,14 +253,20 @@ h2#master-site {
 }
 
 .site-map {
-    float: right;
+}
+
+.site-map .map {
+    width: 70%;
+    float: left;
 }
 
 .items {
     font-size: 18px;
+    margin: 5px 0px;
 }
 
 .designer {
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-    font-size: 14px;    
+    font-size: 14px;
+    margin: 0px;
 }
