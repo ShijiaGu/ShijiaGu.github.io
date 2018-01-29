@@ -10,3 +10,10 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+var svg = SVG.get('#svg-map');
+
+$('.project-list li').mouseover(function() {
+  var id = $(this).attr('data-id');
+  console.log(id);
+});
