@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      
+      function initMap() {
+        var timbuktu = {lat: 16.77348, lng: -3.00742};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: timbuktu
+        });
+      }
+
+      google.maps.event.addListener(map, 'click', function(event) {
+          addMarker(event.latLng, map);
+        });
+
+        addMarker(timbuktu, map);
+
+        function addMarker(timbuktu, map) {
+          var marker = new google.maps.Marker({
+          position: timbuktu,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx4ZivEpeXkvMs2ORpk6J_mu9ZbrpFh3U&callback=initMap">
+    </script>
+  </body>
+</html>

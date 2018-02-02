@@ -3,14 +3,59 @@
 }
 
 html body {
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.menu-part-1 {
+    width: 33.3vw;
+    height: 100%;
+    background: #000000;
+    display: inline-block;
+}
+
+.menu-part-2 {
+    width: 33.3vw;
+    height: 100%;
+    background: #333333;
+    display: inline-block;    
+}
+
+.menu-part-3 {
+    width: 33.3vw;
+    height: 100%;
+    background: #666666;
+    display: inline-block;
+}
+
+div > h1 {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    margin:0;
+    left: 60px;
+    top: 50vh;
+}
+
+
+#overlay-menu {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
 section.intro {
-    /* width: 100%; */
+    width: 100%;
     height: 1200px;
     background: black;
     color: white;
@@ -19,10 +64,32 @@ section.intro {
     justify-content: center;
 }
 
+section.projects {
+    height: 1200px;
+    width: 100%;
+    overflow: auto;
+}
+
+section.projects > div {
+    height: 1200px;
+    /* display: inline-block; */
+    width: 200vw;
+}
+
 header {
     /* background: black; */
     display: flex;
     justify-content: space-between;
+}
+
+.project-item {
+    width: 33.3vw;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0px;
 }
 
 .sticky {
@@ -32,7 +99,7 @@ header {
 }
 
 #menu-icon-open {
-    background: url(../assets/SVG/menu_open.svg);
+    background: url(../assets/SVG/menu_open.svg) no-repeat;
     /* background-size: contain; */
     cursor: pointer;
     height: 50px;
@@ -40,6 +107,19 @@ header {
     margin: 30px 30px 0 0;
     position: absolute;
     right: 0px;
+    border: none;
+}
+
+#menu-icon-close {
+    background: url(../assets/SVG/menu_close.svg) no-repeat;
+    /* background-size: contain; */
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin: 30px 30px 0 0;
+    position: absolute;
+    right: 0px;
+    border: none;
 }
 
 #logo {
@@ -73,22 +153,118 @@ header {
 
 #vitra-schaudepot {
     background: url(../assets/projects/vitra_schaudepot_cover-2200_1.jpg) no-repeat;
-    height: 1200px;
-    position: relative;
-    z-index: -1;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    /* height: 1200px; */
+    /* position: relative; */
+    /* z-index: -1; */
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
 }
 
-.year_name {
+#vitrahaus {
+    background: url(../assets/projects/vitra_schaudepot_cover-2200_1.jpg) no-repeat;
+}
+
+#firestation {
+    background: url(../assets/projects/vitra_schaudepot_cover-2200_1.jpg) no-repeat;
+}
+
+#conference-pavilion {
+    background: url(../assets/projects/vitra_schaudepot_cover-2200_1.jpg) no-repeat;
+}
+
+#vitra-design-museum {
+    background: url(../assets/projects/vitra_schaudepot_cover-2200_1.jpg) no-repeat;
+}
+
+#factory-building {
+    background: url(../assets/projects/vitra_schaudepot_cover-2200_1.jpg) no-repeat;
+}
+
+.year {
     margin: 0;
+    position: absolute;
+}
+
+.year-right {
+    position: absolute;
+    left: 55%;
+}
+
+.year-left {
+    position: absolute;
+    right: 55%;
 }
 
 .project-info {
-    position: absolute;
+    position: relative;
     color: white;
-    margin: 60px;
+    /* margin: 60px; */
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline h2 {
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+.timeline-list p {
+    font-size: 10px;
+    color: #bcbec0;
+    margin: 1px 0px;
+}
+
+.timeline-list h3 {
+    margin: 1px 0px;
+}
+
+.timeline-right {
+    text-align: left;
+}
+
+.timeline-left {
+    text-align: right;
+}
+
+.horizontal-dash {
+    position: absolute;
+    /* display: inline-block; */
+    width: 1%;
+    left: 49.5%;
+    border-top: 1px solid black;
+}
+
+.timeline-vl {
+    left: 50%;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid grey;
+    float: left;
+}
+
+.timeline-list img {
+    width: 100%;
+}
+
+.timeline-list > div {
+    display: inline-block;
+    width: 200px;
+}
+
+.timeline-left {
+    position: relative;
+    right: 20%;
+}
+
+.timeline-right {
+    /* float: right; */
+    position: relative;
+    left: 20%;
+    /* right: 20%; */
 }
 
 button {
@@ -105,6 +281,10 @@ button {
     font-size: 40px;
 }
 
+.timeline-list {
+    display: block;
+}
+
 .timeline {
     background-color: #ebeced;
     text-align: center;
@@ -112,12 +292,16 @@ button {
 
 .project-list {
     background: black;
-    width: 400px;
+    width: 30%;
     color: white;
+    height: 100%;
+    float: right;
 }
 
-h2 #master-site {
+h2#master-site {
     margin: 0;
+    text-align: center;
+    padding: 20px 0px;
 }
 
 .lists {
@@ -126,11 +310,19 @@ h2 #master-site {
     
 }
 
+
+.site-map .map {
+    width: 70%;
+    float: left;
+}
+
 .items {
     font-size: 18px;
+    margin: 5px 0px;
 }
 
 .designer {
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-    font-size: 14px;    
+    font-size: 14px;
+    margin: 0px;
 }
