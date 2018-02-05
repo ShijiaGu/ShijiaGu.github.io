@@ -25,8 +25,64 @@ $(document).ready (function(){
       $('.logo-color').css("fill","#ffffff");
     }
   });
+
+// project section mouse hover effect
+
+  $(".name-1").hover(
+    function () {
+        $(".intro-1").fadeIn();
+    },
+    function () {
+        $(".intro-1").fadeOut();
+    }
+  );
+
+  $(".name-2").hover(
+    function () {
+        $(".intro-2").fadeIn();
+    },
+    function () {
+        $(".intro-2").fadeOut();
+    }
+  );
+
+  $(".name-3").hover(
+    function () {
+        $(".intro-3").fadeIn();
+    },
+    function () {
+        $(".intro-3").fadeOut();
+    }
+  );
+
+  $(".name-4").hover(
+    function () {
+        $(".intro-4").fadeIn();
+    },
+    function () {
+        $(".intro-4").fadeOut();
+    }
+  );
+
+  $(".name-5").hover(
+    function () {
+        $(".intro-5").fadeIn();
+    },
+    function () {
+        $(".intro-5").fadeOut();
+    }
+  );
+
+  $(".name-6").hover(
+    function () {
+        $(".intro-6").fadeIn();
+    },
+    function () {
+        $(".intro-6").fadeOut();
+    }
+  );
   
-// mouse hover effect
+// map mouse hover effect
 
   var svg = SVG.get('#svg-map');
 
@@ -43,7 +99,7 @@ $(document).ready (function(){
   });
 
 
-// animated scroll loading effect
+// timeline images animated scroll loading effect
 
   $('.timeline-list').addClass("hidden").viewportChecker({
     classToAdd: 'visible animated fadeInUp',
@@ -55,7 +111,7 @@ $(document).ready (function(){
     offset: 100
    });
 
-// typewriter effect
+// intro section typewriter effect
 
    new TypeIt('#input', {
     strings: "The Vitra Campus is a playing field – but for serious games.", 
@@ -64,7 +120,7 @@ $(document).ready (function(){
     // cursor: false
   });
 
-// menu link transition 
+// upper right corner menu link transition 
 
   $('.menu a').click(function(event) {
     var id = $(this).attr("href");
