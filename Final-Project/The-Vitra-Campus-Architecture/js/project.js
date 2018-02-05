@@ -79,6 +79,16 @@ $(document).ready (function(){
     $('#overlay-menu').toggle(0);
   });
 
+// image gallery
+
+  // $(function() {
+  //   $('.wrapper').click(function() {
+  //     $('.content').toggleClass('open');
+  //     $(this).toggleClass('open');
+  //   })
+    
+  // })
+
 
   
 })
