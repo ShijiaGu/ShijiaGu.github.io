@@ -15,14 +15,14 @@ html body {
     width: 33.3vw;
     height: 100%;
     background: #000000;
-    display: inline-block;
+    display: inline-block;  
 }
 
 .menu-part-2 {
     width: 33.3vw;
     height: 100%;
     background: #333333;
-    display: inline-block;    
+    display: inline-block;   
 }
 
 .menu-part-3 {
@@ -32,8 +32,9 @@ html body {
     display: inline-block;
 }
 
-div > h1 {
+.menu > a {
     color: white;
+    text-decoration: none;
     font-size: 40px;
     position: relative;
     margin:0;
@@ -54,10 +55,8 @@ div > h1 {
     cursor: pointer;
 }
 
-
 #menu-icon-close {
     background: url(../assets/SVG/menu_close.svg) no-repeat;
-    /* background-size: contain; */
     cursor: pointer;
     height: 50px;
     width: 50px;
@@ -76,8 +75,7 @@ header {
     z-index: 999;
 }
 
-#logo {
-    background: url(../assets/SVG/VCA_logo.svg) no-repeat;
+#vca-logo-white {
     height: 40px;
     width: 220px;
     cursor: pointer;
@@ -104,8 +102,8 @@ header {
 
 section.intro {
     width: 100%;
-    height: 1200px;
-    background: black;
+    height: 1000px;
+    background:black;
     color: white;
     display:flex;
     flex-direction: column;
@@ -118,7 +116,7 @@ section.intro {
     line-height: 95%;
     letter-spacing: 1px;
     word-spacing: -2px;
-    margin: 0 auto 50px 60px;
+    margin: -40px auto 50px 60px;
 }
 
 #overall-intro {
@@ -130,6 +128,7 @@ section.intro {
     width: 650px;
     font-size: 22px;
     margin: 0 auto 0px 60px;
+    animation-delay: 6.5s;
 }
 
 /* /* --------------------- projects section css --------------------- * / */
@@ -151,6 +150,11 @@ section.intro {
     display: inline-block;
     padding: 0;
     margin: 0px;
+}
+
+.project-name {
+    font-size: 40px;
+    line-height: 90%;
 }
 
 #vitra-schaudepot {
@@ -262,27 +266,36 @@ h2 {
 
 h2>span {
     display: block;
+    height:40px;
 }
 
 /* /* --------------------- timeline section css --------------------- * / */
 
 .timeline {
     position: relative;
+    background-color: #ebeced;
+    text-align: center;
+    height: 2850px;
 }
 
-.timeline h2 {
-    margin-top: 0px;
-    padding-top: 100px;
+.timeline-vl {
+    left: 50%;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid grey;
+    float: left;
 }
 
-.timeline-list p {
-    font-size: 10px;
-    color: #bcbec0;
-    margin: 1px 0px;
+.timeline-title {
+    margin:0;
+    position: relative;
+    top: 60px;
+    font-size: 48px;
 }
 
-.timeline-list h3 {
-    margin: 1px 0px;
+.timeline-container {
+    margin-top: 120px;
 }
 
 .timeline-right {
@@ -291,9 +304,12 @@ h2>span {
 
 .timeline-left {
     text-align: right;
+    line-height: 20px;
 }
 
 .year {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-size: 20px;    
     margin: 0;
     position: absolute;
 }
@@ -310,57 +326,80 @@ h2>span {
 
 .horizontal-dash {
     position: absolute;
-    /* display: inline-block; */
     width: 1%;
-    left: 49.5%;
+    left: 49.55%;
     border-top: 1px solid black;
 }
 
-.timeline-vl {
+#small-dash {
+    width: 0.8%;
     left: 50%;
-    top: 0px;
-    position: absolute;
-    height: 100%;
-    border-left: 1px solid grey;
-    float: left;
+    border-top: 1px solid #a7a9ac;
 }
 
-.timeline-list img {
-    width: 100%;
+.bw-image {
+    width: 350px;
+    height: 220px;
+    margin-bottom: 10px;
 }
 
 .timeline-list > div {
     display: inline-block;
-    width: 200px;
+    width: 350px;
+    height: 100px;
 }
 
 .timeline-left {
     position: relative;
-    right: 20%;
+    right: 22%;
 }
 
 .timeline-right {
-    /* float: right; */
     position: relative;
-    left: 20%;
-    /* right: 20%; */
-}
-
-
-.project-name {
-    font-size: 40px;
+    left: 22%;
 }
 
 .timeline-list {
     display: block;
 }
 
-.timeline {
-    background-color: #ebeced;
-    text-align: center;
+.timeline-list p {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-size: 14px;
+    color: #a1a1a1;
+    margin: 1px 0px;
 }
 
-/* /* --------------------- master site map section css --------------------- * / */
+.timeline-list h3 {
+    margin: 1px 0px;
+    color: #666666;
+    font-size: 22px;
+}
+
+#black-title {
+    font-size: 22px;
+    color: black;
+}
+
+#morespace {
+    margin-top: 40px;
+}
+
+#lessspace {
+    margin-top: -100px;
+}
+
+/* /* --------------------- mastersite map section css --------------------- * / */
+
+.site-map {
+    height: 950px;
+}
+
+#svg-map {
+    width: 75vw;
+    margin-left: -40px;
+    margin-top: 30px;
+}
 
 .project-list {
     background: black;
@@ -371,9 +410,10 @@ h2>span {
 }
 
 h2#master-site {
+    font-size: 48px;
     margin: 0;
     text-align: center;
-    padding: 20px 0px;
+    padding-top: 60px;
 }
 
 .lists {
@@ -396,4 +436,12 @@ h2#master-site {
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
     font-size: 14px;
     margin: 0px;
+}
+
+
+/* /* --------------------- gallery section css --------------------- * / */
+
+.gallery-img {
+   width: 16.667%vw;
+   height: 150px;
 }
